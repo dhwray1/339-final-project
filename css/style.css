@@ -5,11 +5,73 @@ find all 9 pictures */
 
 /* 3 pics on 1st, 3 pics on the second page, 3pics on the 3rd page  */
 
-.images{
-    width: 100%;
+html{
+    scroll-behavior: smooth;
+  }
+  
+  
+  
+body{
+    background-image: linear-gradient(rgb(249, 223, 174), #ff8800);
+    font-size: 18px;
+    margin: 1%;
+    padding: 1%;
+    font-size: 100%;
+}
+  
+
+.overview{
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    height: 400px;                /* Parallax effect */
+}
+  
+
+img{
+    width: 85%;
+    height: 75%;
 }
 
+h1{
+    font-size: 50px;
+    line-height: 1;
+    padding: 50px 0;
+    text-align: center;
+}
 
+.home-container{
+    display: grid;
+    grid-template-columns: 10fr 10fr 10fr;
+    grid-gap: 2px;
+}
 
+.north-container{
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-gap: 5px;
+    align-items:center; 
+}
 
+.about-image img{
+    border: 5px solid rgb(172, 62, 146);
+}
 
+.south-container{
+    display: grid;
+    grid-template-columns: 10fr 10fr 10fr;
+    grid-gap: 2px;
+}
+
+.animals-container{
+    display: grid;
+    grid-template-columns: 10fr 10fr 10fr;
+    grid-gap: 2px;
+}
+
+.contact-container{
+    display: grid;
+    grid-template-columns: 10fr;
+    grid-gap: 2px;
+}
