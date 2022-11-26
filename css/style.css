@@ -47,6 +47,10 @@ h1{
     grid-gap: 2px;
 }
 
+.about-image img{
+    border: 5px solid green;
+}
+
 .north-container{
     display: grid;
     grid-template-columns: 5fr 5fr;
@@ -54,8 +58,8 @@ h1{
     align-items:center; 
 }
 
-.about-image img{
-    border: 5px solid rgb(172, 62, 146);
+.lake-about-image img{
+    border: 5px solid blue;
 }
 
 .south-container{
@@ -74,4 +78,19 @@ h1{
     display: grid;
     grid-template-columns: 10fr;
     grid-gap: 2px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+    padding: 25px 0;
+    text-align: left;
+}
+
+ul{
+    display: block;
+    text-align: center;
 }
