@@ -28,12 +28,24 @@ find all 9 pictures */
 
 html{
     scroll-behavior: smooth;
-  }
+}
+
+header{
+    align-self: center;
+}
   
-  
-  
+footer {
+    margin: 50px;
+    padding: 5px;
+    text-align: left;
+    background-image: linear-gradient(90deg, #740000 0%, #c63535 15%, #fc4848 70%, #fe8585 100%);
+    border: 2px #ffff solid;
+}
+
 body{
-    background-image: linear-gradient(#fad980, #f7cbcb);
+    /* background-image: linear-gradient(#fad980, #f7cbcb); */
+    background-image: url("../images/background.jpg");
+    color: whitesmoke;
     font-size: 18px;
     margin: 1%;
     padding: 1%;
@@ -63,21 +75,28 @@ h1{
     text-align: center;
 }
 
+#main.home-container{
+    align-items: center;
+}
+
 .home-container{ 
+    margin: 40px;
+    padding: 10px;
+    padding-left: 30px;
+    width: 120%;
     align-items: center;
 }
 
 h2{
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     font-style: italic;
 }
 
 .home-image img{
     width: 50%;
-    padding: 5px;
-    border: 5px solid #8cc09d;
-    align-self: center;
+    border: 5px solid #ffffff;
+    align-items: center;
 }
 
 .north-container{
@@ -88,17 +107,51 @@ h2{
     justify-content: center;
 }
 
-.south-container{
+/* .south-container{
     display: grid;
     grid-template-columns: 10fr 10fr 10fr;
     grid-gap: 2px;
+} */
+
+.south-container{
+    display: flex;
+    flex-flow: row;
+    background-color: #8cc09d;
 }
 
-.animals-container{
+.south-image{
+    background-color: white;
+    width: 33%;
+    height: 100%;
+    margin: 50px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    line-height: normal;
+    font-size: 25px;
+}
+
+.new-south-container{
+    display: flex;
+    flex-flow: row;
+    background-color: #8cc09d;
+}
+
+.last-south-container{
+    display: flex;
+    flex-flow: row;
+    background-color: #8cc09d;
+}
+
+/* .south-container img{
+    border: 5px solid #8cc09d;
+} */
+
+/* .animals-container{
     display: grid;
     grid-template-columns: 10fr 10fr 10fr;
     grid-gap: 2px;
-}
+} */
 
 .contact-container{
     display: grid;
@@ -111,15 +164,18 @@ nav ul {
 }
 
 nav {
-    background-color: #f8c6c6;
-    border: 2px solid rgb(255, 165, 165);
+    background-color: #ffbdbd;
+    /* border: 4px solid rgb(255, 145, 145); */
+    border: 4px solid white;
     padding: 25px 0;
     text-align: left;
     font-size: 20px;
+    margin: auto; 
 }
 
 ul{
-    display: block;
+    display: grid;
+    line-height: 1.25;
     text-align: center;
 }
 
@@ -185,3 +241,109 @@ nav li{
     transform: rotateY(180deg);
     text-align: center;
   }
+
+  /* Position the image container (needed to position the left and right arrows) */
+.animals-container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+.mySlides {
+    display: none;
+    align-items: center;
+    width: 60%;
+}
+  
+  /* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+  
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /* Six columns side by side */
+.column {
+    float: left;
+    width: 15%;
+}
+  
+  /* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+  
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+@media screen and (min-width: 500px){
+    ul{
+        display: list-item;
+    }
+
+    .home-image img{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .mySlides {
+        width: 60%;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+  
+  /* Position the "next button" to the right */
+    .next {
+    right: 550px;
+    border-radius: 3px 0 0 3px;
+    }
+    /* Container for image text */
+    .caption-container {
+        width: 57.75%;
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+    }
+
+     /* Number text (1/3 etc) */
+    .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    }
+
+
+
+}
+
