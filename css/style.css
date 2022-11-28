@@ -40,12 +40,14 @@ footer {
     text-align: left;
     background-image: linear-gradient(90deg, #740000 0%, #c63535 15%, #fc4848 70%, #fe8585 100%);
     border: 2px #ffff solid;
+    align-self: flex-end;
 }
 
 body{
     /* background-image: linear-gradient(#fad980, #f7cbcb); */
+    background-color: #222;
     background-image: url("../images/background.jpg");
-    color: whitesmoke;
+    color: white;
     font-size: 18px;
     margin: 1%;
     padding: 1%;
@@ -79,13 +81,13 @@ h1{
     align-items: center;
 }
 
-.home-container{ 
+/* .home-container{ 
     margin: 40px;
     padding: 10px;
     padding-left: 30px;
     width: 120%;
     align-items: center;
-}
+}  */
 
 h2{
     font-size: 30px;
@@ -93,15 +95,19 @@ h2{
     font-style: italic;
 }
 
+.home-image h2{
+    height: 80px;
+}
+
 .home-image img{
     width: 50%;
     border: 5px solid #ffffff;
-    align-items: center;
+    align-self: center;   
 }
 
 .north-container{
     display: grid;
-    grid-template-columns: 5fr 5fr;
+    grid-template-columns: 5fr;
     grid-gap: 5px;
     align-items: center;
     justify-content: center;
@@ -117,10 +123,13 @@ h2{
     display: flex;
     flex-flow: row;
     background-color: #8cc09d;
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
 }
 
 .south-image{
-    background-color: white;
+    background-color: #8cc09d;
     width: 33%;
     height: 100%;
     margin: 50px;
@@ -135,12 +144,17 @@ h2{
     display: flex;
     flex-flow: row;
     background-color: #8cc09d;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
 }
 
 .last-south-container{
     display: flex;
     flex-flow: row;
     background-color: #8cc09d;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
 }
 
 /* .south-container img{
@@ -170,7 +184,8 @@ nav {
     padding: 25px 0;
     text-align: left;
     font-size: 20px;
-    margin: auto; 
+    margin: auto;
+    position: relative;
 }
 
 ul{
@@ -259,13 +274,19 @@ nav li{
     cursor: pointer;
 }
 
-  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
   /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
   
+
+
 .row:after {
     content: "";
     display: table;
@@ -296,9 +317,19 @@ nav li{
     .home-image img{
         width: 50%;
     }
+
+    
 }
 
 @media screen and (min-width: 700px){
+    .north-container{
+        display: grid;
+        grid-template-columns: 5fr 5fr;
+        grid-gap: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+
     .mySlides {
         width: 60%;
     }
