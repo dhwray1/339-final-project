@@ -113,6 +113,11 @@ h2{
     justify-content: center;
 }
 
+.north-container p{
+    font-size: 25px;
+    text-align: center;
+}
+
 /* .south-container{
     display: grid;
     grid-template-columns: 10fr 10fr 10fr;
@@ -400,9 +405,6 @@ nav li{
     position: absolute;
     top: 0;
     }
-
-
-
 }
 
 
