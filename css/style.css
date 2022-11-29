@@ -33,12 +33,13 @@ header{
 }
   
 footer {
-    margin: 50px;
+    margin: 30px;
     padding: 5px;
     text-align: left;
     background-image: linear-gradient(90deg, #740000 0%, #c63535 15%, #fc4848 70%, #fe8585 100%);
     border: 2px #ffff solid;
     align-self: flex-end;
+    font-size: 12px;
 }
 
 body{
@@ -64,6 +65,21 @@ body{
     height: 160px;                /* Parallax effect */
 }
   
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 3;
+    background-color: #ffbdbd;
+    cursor: pointer;
+  }
+  
+  /* Style the active class (and buttons on mouse-over) */
+  .active, .btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-decoration: none;
+
+  }
 
 img{
     width: 85%;
@@ -100,7 +116,7 @@ h2{
 }
 
 .home-image img{
-    width: 50%;
+    width: 100%;
     border: 5px solid #ffffff;
     align-self: center;   
 }
@@ -114,9 +130,11 @@ h2{
 }
 
 .north-container p{
-    font-size: 25px;
-    text-align: center;
+    font-size: 20px;
+    text-align:center;
 }
+
+
 
 /* .south-container{
     display: grid;
@@ -176,15 +194,27 @@ h2{
     display: grid;
     grid-template-columns: 10fr;
     grid-gap: 2px;
+    margin: 10px;
+}
+
+.container{
+    margin: 10px;
 }
 
 .contact-container p{
     font-size: 25px;
     text-align: center;
+    padding: 10px;
 }
 
 nav ul {
     list-style: none;
+    text-decoration: none;
+}
+
+a.btn{
+    text-decoration: none;
+    color: black;
 }
 
 nav {
@@ -198,6 +228,11 @@ nav {
     position: relative;
 }
 
+.active a{
+	text-decoration: none;
+}
+
+
 ul{
     display: grid;
     line-height: 1.25;
@@ -207,6 +242,7 @@ ul{
 nav li{
     display: inline;
     padding-right: 40px;
+    text-decoration: none;
 }
 
 .new_grid{
@@ -227,7 +263,7 @@ nav li{
     color: #112e51;
     text-align: center;
     width: 80%;
-    height: 350px;
+    height: 225px;
     margin: auto;
     border: 5px solid #cbe1ff;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -320,6 +356,11 @@ nav li{
 .flip-card-back{
     padding: 10px;
     font-style: normal;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    margin: auto;
+    overflow: auto;
 }
 
 .intro-container{
@@ -327,6 +368,7 @@ nav li{
     grid-template-columns: 2fr 2fr;
     align-items: center;
     justify-content: center;
+    grid-gap: 50px;
 }
 
 .intro-container h2{
@@ -339,11 +381,69 @@ nav li{
 @media screen and (min-width: 500px){
     ul{
         display: list-item;
+        text-decoration: none;
+    }
+
+    nav{
+        text-decoration: none;
     }
 
     .home-image img{
         width: 50%;
     }
+
+    footer {
+        margin: 50px;
+        padding: 5px;
+        text-align: left;
+        background-image: linear-gradient(90deg, #740000 0%, #c63535 15%, #fc4848 70%, #fe8585 100%);
+        border: 2px #ffff solid;
+        align-self: flex-end;
+    }
+
+    .north-container p{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .flip-card-front img{
+        width: 100%;
+        height: 100%;
+        align-self: center;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      .flip-image {
+        color: #112e51;
+        text-align: center;
+        width: 80%;
+        height: 350px;
+        margin: auto;
+        border: 5px solid #cbe1ff;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+
+    .home-image img{
+        width: 50%;
+        border: 5px solid #ffffff;
+        align-self: center;   
+    }
+
+    .btn {
+        border: none;
+        outline: none;
+        padding: 10px 16px;
+        background-color: #ffbdbd;
+        cursor: pointer;
+      }
 
 }
 
