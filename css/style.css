@@ -150,6 +150,10 @@ h2{
     border-right: 5px solid white;
 }
 
+.south-container p{
+    color: black;
+}
+
 .south-image{
     background-color: #8cc09d;
     width: 33%;
@@ -170,6 +174,10 @@ h2{
     border-right: 5px solid white;
 }
 
+.new-south-container p{
+    color: black;
+}
+
 .last-south-container{
     display: flex;
     flex-flow: row;
@@ -177,6 +185,10 @@ h2{
     border-left: 5px solid white;
     border-right: 5px solid white;
     border-bottom: 5px solid white;
+}
+
+.last-south-container p{
+    color: black;
 }
 
 /* .south-container img{
@@ -385,8 +397,12 @@ nav li{
     text-align: left;
 }
 
+.col-75{
+    text-decoration: none;
+}
 
-@media screen and (min-width: 500px){
+
+@media screen and (min-width: 600px){
     ul{
         display: list-item;
         text-decoration: none;
@@ -465,7 +481,7 @@ nav li{
 
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 800px){
     *:focus{
         border-width: 5px;
         border-style: solid;
