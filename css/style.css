@@ -566,22 +566,25 @@ nav li{
   }
   
   input[type=submit] {
-    background-color: #b786d2;
+    background-color: teal;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     float: right;
+    margin: auto;
   }
   
   input[type=submit]:hover {
-    background-color: #6e45a0;
+    background-color: rgb(0, 70, 70);
+    align-items: center;
+    margin: auto;
   }
   
   .container {
     border-radius: 5px;
-    background-color:rgb(233, 216, 255);
+    background-color: #ffbdbd;
     padding: 20px;
   }
   
