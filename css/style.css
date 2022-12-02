@@ -143,37 +143,40 @@ h2{
 
 .south-container{
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
+    justify-content: flex-end;
     background-color: #8cc09d;
-    border-top: 5px solid white;
-    border-left: 5px solid white;
-    border-right: 5px solid white;
-}
-
-.south-container p{
-    color: black;
+    border: 5px solid white;
+    /* border-left: 5px solid white;
+    border-right: 5px solid white; */
 }
 
 .south-image{
     background-color: #8cc09d;
     width: 33%;
     height: 100%;
-    margin: 50px;
-    padding: 20px;
+    margin: 20px;
+    padding: 10px; 
     margin: auto;
     text-align: center;
     line-height: normal;
     font-size: 25px;
 }
 
-.new-south-container{
+.south-image p{
+    color: black;
+    font-size: 15px;
+}
+
+/* .new-south-container{
     display: flex;
     flex-flow: row;
+    flex-wrap: wrap;
     background-color: #8cc09d;
     border-left: 5px solid white;
     border-right: 5px solid white;
-}
-
+} */
+/* 
 .new-south-container p{
     color: black;
 }
@@ -189,7 +192,7 @@ h2{
 
 .last-south-container p{
     color: black;
-}
+} */
 
 /* .south-container img{
     border: 5px solid #8cc09d;
@@ -306,7 +309,7 @@ nav li{
 
 .flip-iamge:hover .flip-card-inner, .flip-image:active .flip-card-inner, .flip-image:focus .flip-card-inner {
   transform: rotateY(180deg);
-  }
+}
 
 .flip-card-front, .flip-card-back {
     position: absolute;
@@ -314,19 +317,19 @@ nav li{
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-  }
+}
 
 .flip-card-back {
     background-color: #e7f4e4;
     color: #112e51;
     transform: rotateY(180deg);
     text-align: center;
-  }
+}
 
   /* Position the image container (needed to position the left and right arrows) */
 .animals-container {
     position: relative;
-  }
+}
   
   /* Hide the images by default */
 .mySlides {
@@ -464,6 +467,25 @@ nav li{
         animation-duration: 10s;
     }
 
+    .south-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: #8cc09d;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .south-image p{
+        font-size: 20px;
+    }
+
+    .south-image{
+        margin: 40px;
+        padding: 10px; 
+    }
+    
+
     @keyframes example {
   0%   {background-color:red; left:0px; top:0px;}
   25%  {background-color:yellow; left:600px; top:0px;}
@@ -478,7 +500,9 @@ nav li{
         background-color: #ffbdbd;
         cursor: pointer;
     }
-
+    nav ul{
+        line-height: 3;
+    }
 }
 
 @media screen and (min-width: 800px){
@@ -494,6 +518,10 @@ nav li{
         grid-gap: 5px;
         align-items: center;
         justify-content: center;
+    }
+
+    nav ul{
+        line-height: 3;
     }
 
     .mySlides {
@@ -538,6 +566,12 @@ nav li{
     padding: 8px 12px;
     position: absolute;
     top: 0;
+    }
+
+    .south-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
     }
 }
 
